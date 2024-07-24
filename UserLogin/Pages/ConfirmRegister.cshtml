@@ -1,0 +1,13 @@
+﻿@page
+@model UserLogin.Pages.ConfirmRegisterModel
+
+<h2>Подтверждение регистрации</h2>
+<b>@Model.Email</b>
+
+<form method="post">
+    <p>
+        <label>Код подтверждения</label><br/>
+        <input name="ConfirmationCode" />
+    </p>
+    <input type="submit" value="Отправить" />
+</form>
